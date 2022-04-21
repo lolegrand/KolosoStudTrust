@@ -50,9 +50,9 @@ class UE extends Model
      *
      * @var array
      */
-    protected $casts = [
-        'codeUE' => 'string', 'capacite' => 'int', 'impaire' => 'boolean', 'libelle' => 'string', 'pair' => 'boolean'
-    ];
+//    protected $casts = [
+//        'codeUE' => 'string', 'capacite' => 'int', 'impaire' => 'boolean', 'libelle' => 'string', 'pair' => 'boolean'
+//    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -68,7 +68,7 @@ class UE extends Model
      *
      * @var boolean
      */
-    public $timestamps = true;
+    public $timestamps = false;
 
     // Scopes...
 

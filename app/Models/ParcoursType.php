@@ -46,9 +46,9 @@ class ParcoursType extends Model
      *
      * @var array
      */
-    protected $casts = [
-        'libelle' => 'string'
-    ];
+//    protected $casts = [
+//        'libelle' => 'string'
+//    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -64,11 +64,18 @@ class ParcoursType extends Model
      *
      * @var boolean
      */
-    public $timestamps = true;
+    public $timestamps = false;
 
     // Scopes...
 
     // Functions ...
+
+    //return list of medicines
+    public function UEs(){
+        return $this->belongsToMany(UE::class, 'ParcoursTypeEstComposeUe','libele','codeUE')->withPivot([
+            'numSemestre'
+        ]);
+    }
 
     // Relations ...
 }

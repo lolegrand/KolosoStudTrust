@@ -48,9 +48,9 @@ class ParcoursTypeEstComposeUe extends Model
      *
      * @var array
      */
-    protected $casts = [
-        'codeUE' => 'string', 'libelle' => 'string', 'numSemestre' => 'int'
-    ];
+//    protected $casts = [
+//        'codeUE' => 'string', 'libelle' => 'string', 'numSemestre' => 'int'
+//    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -66,7 +66,7 @@ class ParcoursTypeEstComposeUe extends Model
      *
      * @var boolean
      */
-    public $timestamps = true;
+    public $timestamps = false;
 
     // Scopes...
 
