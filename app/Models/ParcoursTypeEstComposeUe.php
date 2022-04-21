@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property string $codeUE
  * @property string $libelle
+ * @property string $codeUE
  * @property int    $numSemestre
  */
 class ParcoursTypeEstComposeUe extends Model
@@ -23,7 +23,7 @@ class ParcoursTypeEstComposeUe extends Model
      *
      * @var string
      */
-    protected $primaryKey = 'codeUE';
+    protected $primaryKey = 'libelle';
 
     /**
      * Attributes that should be mass-assignable.
@@ -31,7 +31,7 @@ class ParcoursTypeEstComposeUe extends Model
      * @var array
      */
     protected $fillable = [
-        'libelle', 'numSemestre'
+        'codeUE', 'numSemestre'
     ];
 
     /**
@@ -48,9 +48,9 @@ class ParcoursTypeEstComposeUe extends Model
      *
      * @var array
      */
-//    protected $casts = [
-//        'codeUE' => 'string', 'libelle' => 'string', 'numSemestre' => 'int'
-//    ];
+    protected $casts = [
+        'libelle' => 'string', 'codeUE' => 'string', 'numSemestre' => 'int'
+    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -66,7 +66,7 @@ class ParcoursTypeEstComposeUe extends Model
      *
      * @var boolean
      */
-    public $timestamps = false;
+    public $timestamps = true;
 
     // Scopes...
 

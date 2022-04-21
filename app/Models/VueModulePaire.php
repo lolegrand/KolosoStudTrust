@@ -5,18 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int    $capacite
- * @property string $codeUE
+ * @property string $codeModule
  * @property string $libelle
+ * @property string $commentaire
  */
-class VueUEPair extends Model
+class VueModulePaire extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'VueUEPair';
+    protected $table = 'VueModulePaire';
 
     /**
      * The primary key for the model.
@@ -31,7 +31,7 @@ class VueUEPair extends Model
      * @var array
      */
     protected $fillable = [
-        'capacite', 'codeUE', 'libelle', 'modalite'
+        'codeModule', 'libelle', 'commentaire'
     ];
 
     /**
@@ -49,7 +49,7 @@ class VueUEPair extends Model
      * @var array
      */
     protected $casts = [
-        'capacite' => 'int', 'codeUE' => 'string', 'libelle' => 'string'
+        'codeModule' => 'string', 'libelle' => 'string', 'commentaire' => 'string'
     ];
 
     /**

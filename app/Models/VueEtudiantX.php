@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int    $annee
  * @property string $codeUE
  * @property string $semestre
+ * @property int    $annee
  */
 class VueEtudiantX extends Model
 {
@@ -31,7 +31,7 @@ class VueEtudiantX extends Model
      * @var array
      */
     protected $fillable = [
-        'annee', 'codeUE', 'etat', 'semestre'
+        'codeUE', 'annee', 'semestre', 'etat'
     ];
 
     /**
@@ -49,7 +49,7 @@ class VueEtudiantX extends Model
      * @var array
      */
     protected $casts = [
-        'annee' => 'int', 'codeUE' => 'string', 'semestre' => 'string'
+        'codeUE' => 'string', 'annee' => 'int', 'semestre' => 'string'
     ];
 
     /**

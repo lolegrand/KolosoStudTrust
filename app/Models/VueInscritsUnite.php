@@ -30,7 +30,7 @@ class VueInscritsUnite extends Model
      * @var array
      */
     protected $fillable = [
-        'annee', 'codeUE', 'count(*)'
+        'annee', 'codeUE', 'nbInscrit'
     ];
 
     /**

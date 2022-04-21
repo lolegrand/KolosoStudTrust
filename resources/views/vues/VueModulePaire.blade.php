@@ -29,23 +29,21 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <h3>Cesures</h3>
+                                <h3>Modules des UE en semestre paire</h3>
                                 <table class="table table-dark">
                                     <thead>
                                     <tr scope="row">
-                                        <th>annee</th>
-                                        <th>codeUE</th>
-                                        <th>ECTS</th>
+                                        <th>codeModule</th>
+                                        <th>libelle</th>
+                                        <th>commentaire</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($data as $single)
                                         <tr class="pointer">
-                                            <td>{{$single->annee}}</td>
-                                            <td>{{$single->codeUE}}</td>
-                                            <td>{{$single->ECTS}}</td>
-                                            <td>{{$single->nom}}</td>
-                                            <td>{{$single->semestre}}</td>
+                                            <td>{{$single->codeModule}}</td>
+                                            <td>{{$single->libelle}}</td>
+                                            <td>{{$single->commentaire}}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>

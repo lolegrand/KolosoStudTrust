@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $codeModule
- * @property string $commentaire
  * @property string $libelle
+ * @property string $commentaire
  */
 class Module extends Model
 {
@@ -31,7 +31,7 @@ class Module extends Model
      * @var array
      */
     protected $fillable = [
-        'commentaire', 'libelle'
+        'libelle', 'commentaire'
     ];
 
     /**
@@ -49,7 +49,7 @@ class Module extends Model
      * @var array
      */
     protected $casts = [
-        'codeModule' => 'string', 'commentaire' => 'string', 'libelle' => 'string'
+        'codeModule' => 'string', 'libelle' => 'string', 'commentaire' => 'string'
     ];
 
     /**

@@ -5,17 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int     $annee
- * @property int     $capacite
  * @property string  $codeUE
  * @property string  $libelle
- * @property string  $nom
  * @property string  $num
- * @property string  $prenom
  * @property string  $semestre
- * @property Date    $dateNaiss
+ * @property string  $nom
+ * @property string  $prenom
  * @property boolean $impaire
- * @property boolean $pair
+ * @property boolean $paire
+ * @property int     $capacite
+ * @property int     $annee
+ * @property Date    $dateNaiss
  */
 class VueAjourneesDetail extends Model
 {
@@ -39,7 +39,7 @@ class VueAjourneesDetail extends Model
      * @var array
      */
     protected $fillable = [
-        'annee', 'capacite', 'codeUE', 'dateNaiss', 'etat', 'impaire', 'libelle', 'modalite', 'nom', 'num', 'pair', 'prenom', 'semestre'
+        'codeUE', 'modalite', 'libelle', 'impaire', 'paire', 'capacite', 'num', 'annee', 'semestre', 'etat', 'nom', 'prenom', 'dateNaiss'
     ];
 
     /**
@@ -57,7 +57,7 @@ class VueAjourneesDetail extends Model
      * @var array
      */
     protected $casts = [
-        'annee' => 'int', 'capacite' => 'int', 'codeUE' => 'string', 'dateNaiss' => 'date', 'impaire' => 'boolean', 'libelle' => 'string', 'nom' => 'string', 'num' => 'string', 'pair' => 'boolean', 'prenom' => 'string', 'semestre' => 'string'
+        'codeUE' => 'string', 'libelle' => 'string', 'impaire' => 'boolean', 'paire' => 'boolean', 'capacite' => 'int', 'num' => 'string', 'annee' => 'int', 'semestre' => 'string', 'nom' => 'string', 'prenom' => 'string', 'dateNaiss' => 'date'
     ];
 
     /**

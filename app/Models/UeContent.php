@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property string $codeModule
  * @property string $codeUE
+ * @property string $codeModule
  */
 class UeContent extends Model
 {
@@ -22,7 +22,7 @@ class UeContent extends Model
      *
      * @var string
      */
-    protected $primaryKey = 'codeModule';
+    protected $primaryKey = 'codeUE';
 
     /**
      * Attributes that should be mass-assignable.
@@ -30,7 +30,7 @@ class UeContent extends Model
      * @var array
      */
     protected $fillable = [
-        'codeUE'
+        'codeModule'
     ];
 
     /**
@@ -48,7 +48,7 @@ class UeContent extends Model
      * @var array
      */
     protected $casts = [
-        'codeModule' => 'string', 'codeUE' => 'string'
+        'codeUE' => 'string', 'codeModule' => 'string'
     ];
 
     /**

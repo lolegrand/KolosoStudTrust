@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int    $anne1
- * @property int    $anne2
  * @property string $nom
  * @property string $prenom
+ * @property int    $anne1
+ * @property int    $anne2
  */
 class Vue2Cesures extends Model
 {
@@ -32,7 +32,7 @@ class Vue2Cesures extends Model
      * @var array
      */
     protected $fillable = [
-        'anne1', 'anne2', 'nom', 'prenom'
+        'nom', 'prenom', 'anne1', 'anne2'
     ];
 
     /**
@@ -50,7 +50,7 @@ class Vue2Cesures extends Model
      * @var array
      */
     protected $casts = [
-        'anne1' => 'int', 'anne2' => 'int', 'nom' => 'string', 'prenom' => 'string'
+        'nom' => 'string', 'prenom' => 'string', 'anne1' => 'int', 'anne2' => 'int'
     ];
 
     /**

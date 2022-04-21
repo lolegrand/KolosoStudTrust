@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property Date   $dateNaiss
- * @property string $nom
  * @property string $num
+ * @property string $nom
  * @property string $prenom
+ * @property Date   $dateNaiss
  */
 class VueImpasseSurX extends Model
 {
@@ -32,7 +32,7 @@ class VueImpasseSurX extends Model
      * @var array
      */
     protected $fillable = [
-        'dateNaiss', 'nom', 'num', 'prenom'
+        'num', 'nom', 'prenom', 'dateNaiss'
     ];
 
     /**
@@ -50,7 +50,7 @@ class VueImpasseSurX extends Model
      * @var array
      */
     protected $casts = [
-        'dateNaiss' => 'date', 'nom' => 'string', 'num' => 'string', 'prenom' => 'string'
+        'num' => 'string', 'nom' => 'string', 'prenom' => 'string', 'dateNaiss' => 'date'
     ];
 
     /**

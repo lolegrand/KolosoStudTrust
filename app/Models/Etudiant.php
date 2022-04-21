@@ -32,7 +32,7 @@ class Etudiant extends Model
      * @var array
      */
     protected $fillable = [
-        'dateNaiss', 'nom', 'prenom'
+        'nom', 'prenom', 'dateNaiss'
     ];
 
     /**
@@ -50,7 +50,7 @@ class Etudiant extends Model
      * @var array
      */
     protected $casts = [
-        'num' => 'string', 'dateNaiss' => 'date', 'nom' => 'string', 'prenom' => 'string'
+        'num' => 'string', 'nom' => 'string', 'prenom' => 'string', 'dateNaiss' => 'date'
     ];
 
     /**

@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $codeModule
+ * @property string $libelle
+ * @property string $commentaire
  */
 class VueModuleNbUE extends Model
 {
@@ -29,7 +31,7 @@ class VueModuleNbUE extends Model
      * @var array
      */
     protected $fillable = [
-        'codeModule', 'count(*)'
+        'codeModule', 'libelle', 'commentaire', 'nbUE'
     ];
 
     /**
@@ -47,7 +49,7 @@ class VueModuleNbUE extends Model
      * @var array
      */
     protected $casts = [
-        'codeModule' => 'string'
+        'codeModule' => 'string', 'libelle' => 'string', 'commentaire' => 'string'
     ];
 
     /**

@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $num
+ * @property string $nom
+ * @property string $prenom
+ * @property Date   $dateNaiss
  */
 class VueDiplomes extends Model
 {
@@ -29,7 +32,7 @@ class VueDiplomes extends Model
      * @var array
      */
     protected $fillable = [
-        'num'
+        'num', 'nom', 'prenom', 'dateNaiss'
     ];
 
     /**
@@ -47,7 +50,7 @@ class VueDiplomes extends Model
      * @var array
      */
     protected $casts = [
-        'num' => 'string'
+        'num' => 'string', 'nom' => 'string', 'prenom' => 'string', 'dateNaiss' => 'date'
     ];
 
     /**
@@ -56,7 +59,7 @@ class VueDiplomes extends Model
      * @var array
      */
     protected $dates = [
-        
+        'dateNaiss'
     ];
 
     /**

@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int    $annee
  * @property string $codeUE
  * @property string $num
  * @property string $semestre
+ * @property int    $annee
  */
 class EtudiantSelectUE extends Model
 {
@@ -24,7 +24,7 @@ class EtudiantSelectUE extends Model
      *
      * @var string
      */
-    protected $primaryKey = 'annee';
+    protected $primaryKey = 'codeUE';
 
     /**
      * Attributes that should be mass-assignable.
@@ -32,7 +32,7 @@ class EtudiantSelectUE extends Model
      * @var array
      */
     protected $fillable = [
-        'codeUE', 'etat', 'num', 'semestre'
+        'num', 'annee', 'semestre', 'etat'
     ];
 
     /**
@@ -50,7 +50,7 @@ class EtudiantSelectUE extends Model
      * @var array
      */
     protected $casts = [
-        'annee' => 'int', 'codeUE' => 'string', 'num' => 'string', 'semestre' => 'string'
+        'codeUE' => 'string', 'num' => 'string', 'annee' => 'int', 'semestre' => 'string'
     ];
 
     /**

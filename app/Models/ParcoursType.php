@@ -29,7 +29,7 @@ class ParcoursType extends Model
      * @var array
      */
     protected $fillable = [
-
+        
     ];
 
     /**
@@ -38,7 +38,7 @@ class ParcoursType extends Model
      * @var array
      */
     protected $hidden = [
-
+        
     ];
 
     /**
@@ -46,9 +46,9 @@ class ParcoursType extends Model
      *
      * @var array
      */
-//    protected $casts = [
-//        'libelle' => 'string'
-//    ];
+    protected $casts = [
+        'libelle' => 'string'
+    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -56,7 +56,7 @@ class ParcoursType extends Model
      * @var array
      */
     protected $dates = [
-
+        
     ];
 
     /**
@@ -64,18 +64,11 @@ class ParcoursType extends Model
      *
      * @var boolean
      */
-    public $timestamps = false;
+    public $timestamps = true;
 
     // Scopes...
 
     // Functions ...
-
-    //return list of medicines
-    public function UEs(){
-        return $this->belongsToMany(UE::class, 'ParcoursTypeEstComposeUe','libele','codeUE')->withPivot([
-            'numSemestre'
-        ]);
-    }
 
     // Relations ...
 }

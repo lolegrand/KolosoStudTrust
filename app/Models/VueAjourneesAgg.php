@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int    $annee
  * @property string $codeUE
+ * @property int    $annee
  */
 class VueAjourneesAgg extends Model
 {
@@ -30,7 +30,7 @@ class VueAjourneesAgg extends Model
      * @var array
      */
     protected $fillable = [
-        'annee', 'codeUE', 'echec', 'inscrit', 'porcentEchec'
+        'codeUE', 'annee', 'inscrit', 'echec', 'porcentEchec'
     ];
 
     /**
@@ -48,7 +48,7 @@ class VueAjourneesAgg extends Model
      * @var array
      */
     protected $casts = [
-        'annee' => 'int', 'codeUE' => 'string'
+        'codeUE' => 'string', 'annee' => 'int'
     ];
 
     /**

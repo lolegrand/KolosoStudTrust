@@ -5,7 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property string $codeUE
+ * @property string  $codeUE
+ * @property string  $num
+ * @property string  $semestre
+ * @property string  $nom
+ * @property string  $prenom
+ * @property string  $libelle
+ * @property int     $annee
+ * @property int     $capacite
+ * @property Date    $dateNaiss
+ * @property boolean $impaire
+ * @property boolean $paire
  */
 class VueAcquisX extends Model
 {
@@ -29,7 +39,7 @@ class VueAcquisX extends Model
      * @var array
      */
     protected $fillable = [
-        'codeUE', 'etat'
+        'codeUE', 'num', 'annee', 'semestre', 'etat', 'nom', 'prenom', 'dateNaiss', 'modalite', 'libelle', 'impaire', 'paire', 'capacite'
     ];
 
     /**
@@ -47,7 +57,7 @@ class VueAcquisX extends Model
      * @var array
      */
     protected $casts = [
-        'codeUE' => 'string'
+        'codeUE' => 'string', 'num' => 'string', 'annee' => 'int', 'semestre' => 'string', 'nom' => 'string', 'prenom' => 'string', 'dateNaiss' => 'date', 'libelle' => 'string', 'impaire' => 'boolean', 'paire' => 'boolean', 'capacite' => 'int'
     ];
 
     /**
@@ -56,7 +66,7 @@ class VueAcquisX extends Model
      * @var array
      */
     protected $dates = [
-        
+        'dateNaiss'
     ];
 
     /**

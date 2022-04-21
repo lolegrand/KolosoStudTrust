@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property int    $annee
+ * @property string $semestre
  * @property string $nom
  * @property string $prenom
- * @property string $semestre
  */
 class VueCesure extends Model
 {
@@ -32,7 +32,7 @@ class VueCesure extends Model
      * @var array
      */
     protected $fillable = [
-        'annee', 'nom', 'prenom', 'semestre'
+        'annee', 'semestre', 'nom', 'prenom'
     ];
 
     /**
@@ -50,7 +50,7 @@ class VueCesure extends Model
      * @var array
      */
     protected $casts = [
-        'annee' => 'int', 'nom' => 'string', 'prenom' => 'string', 'semestre' => 'string'
+        'annee' => 'int', 'semestre' => 'string', 'nom' => 'string', 'prenom' => 'string'
     ];
 
     /**

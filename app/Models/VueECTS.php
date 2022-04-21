@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property string $nom
  * @property string $num
+ * @property string $nom
  * @property string $prenom
  */
 class VueECTS extends Model
@@ -31,7 +31,7 @@ class VueECTS extends Model
      * @var array
      */
     protected $fillable = [
-        'nbECTS', 'nom', 'num', 'prenom'
+        'num', 'nom', 'prenom', 'nbECTS'
     ];
 
     /**
@@ -49,7 +49,7 @@ class VueECTS extends Model
      * @var array
      */
     protected $casts = [
-        'nom' => 'string', 'num' => 'string', 'prenom' => 'string'
+        'num' => 'string', 'nom' => 'string', 'prenom' => 'string'
     ];
 
     /**

@@ -5,24 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int    $id
- * @property string $name
+ * @property string $codeModule
+ * @property string $libelle
+ * @property string $commentaire
  */
-class Class extends Model
+class VueModuleImpaire extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'Class';
+    protected $table = 'VueModuleImpaire';
 
     /**
      * The primary key for the model.
      *
      * @var string
      */
-    protected $primaryKey = 'id';
+    protected $primaryKey = '';
 
     /**
      * Attributes that should be mass-assignable.
@@ -30,7 +31,7 @@ class Class extends Model
      * @var array
      */
     protected $fillable = [
-        'name'
+        'codeModule', 'libelle', 'commentaire'
     ];
 
     /**
@@ -48,7 +49,7 @@ class Class extends Model
      * @var array
      */
     protected $casts = [
-        'id' => 'int', 'name' => 'string'
+        'codeModule' => 'string', 'libelle' => 'string', 'commentaire' => 'string'
     ];
 
     /**

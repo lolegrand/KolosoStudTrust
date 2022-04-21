@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @property string  $codeUE
  * @property string  $libelle
- * @property int     $capacite
  * @property boolean $impaire
- * @property boolean $pair
+ * @property boolean $paire
+ * @property int     $capacite
  */
 class UE extends Model
 {
@@ -33,7 +33,7 @@ class UE extends Model
      * @var array
      */
     protected $fillable = [
-        'capacite', 'impaire', 'libelle', 'modalite', 'pair'
+        'modalite', 'libelle', 'impaire', 'paire', 'capacite'
     ];
 
     /**
@@ -50,9 +50,9 @@ class UE extends Model
      *
      * @var array
      */
-//    protected $casts = [
-//        'codeUE' => 'string', 'capacite' => 'int', 'impaire' => 'boolean', 'libelle' => 'string', 'pair' => 'boolean'
-//    ];
+    protected $casts = [
+        'codeUE' => 'string', 'libelle' => 'string', 'impaire' => 'boolean', 'paire' => 'boolean', 'capacite' => 'int'
+    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -68,7 +68,7 @@ class UE extends Model
      *
      * @var boolean
      */
-    public $timestamps = false;
+    public $timestamps = true;
 
     // Scopes...
 
