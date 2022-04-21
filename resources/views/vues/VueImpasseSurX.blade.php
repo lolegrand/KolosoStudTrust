@@ -29,22 +29,23 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <h3>Vue2Cesures</h3>
+                                <h3>VueImpasseSurX</h3>
                                 <table class="table table-dark">
                                     <thead>
                                     <tr scope="row">
-                                        <th>anne1</th>
-                                        <th>anne2</th>
+                                        <th>dateNaiss</th>
                                         <th>nom</th>
+                                        <th>num</th>
                                         <th>prenom</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+
                                     @foreach($data as $single)
                                         <tr class="pointer">
-                                            <td>{{$single->anne1}}</td>
-                                            <td>{{$single->anne2}}</td>
+                                            <td>{{$single->dateNaiss->format('j F, Y')}}</td>
                                             <td>{{$single->nom}}</td>
+                                            <td>{{$single->num}}</td>
                                             <td>{{$single->prenom}}</td>
                                         </tr>
                                     @endforeach

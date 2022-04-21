@@ -20,7 +20,17 @@ Route::get('/', function () {
 
 
 Route::get('/Vue2Cesures', [Controllers\Vue2CesuresController::class, 'getAll'])->name('Vue2Cesures');
-//Route::get('/VueAcquisDetailX', [Controllers\VueAcquisDetailX::class, 'getAll'])->name('VueAcquisDetailX');
-//Route::get('/VueAjourneesAgg', [Controllers\VueAjourneesAgg::class, 'getAll'])->name('VueAjourneesAgg');
-//Route::get('/VueAjourneesDetail', [Controllers\VueAjourneesDetail::class, 'getAll'])->name('VueAjourneesDetail');
-//Route::get('/VueDiplomes', [Controllers\VueDiplomes::class, 'getAll'])->name('VueDiplomes');
+Route::get('/VueAcquisDetailX', [Controllers\VueAcquisDetailXController::class, 'getAll'])->name('VueAcquisDetailX');
+Route::get('/VueAcquisX', [Controllers\VueAcquisXController::class, 'getAll'])->name('VueAcquisX');
+Route::get('/VueAjourneesAgg', [Controllers\VueAjourneesAggController::class, 'getAll'])->name('VueAjourneesAgg');
+Route::get('/VueAjourneesDetail', [Controllers\VueAjourneesDetailController::class, 'getAll'])->name('VueAjourneesDetail');
+Route::get('/VueCesure', [Controllers\VueCesureController::class, 'getAll'])->name('VueCesure');
+
+Route::get('/VueDiplomes', [Controllers\VueDiplomesController::class, 'getAll'])->name('VueDiplomes');
+Route::get('/VueECTS', [Controllers\VueECTSController::class, 'getAll'])->name('VueECTS');
+Route::get('/VueEtudiantX', [Controllers\VueEtudiantXController::class, 'getAll'])->name('VueEtudiantX');
+Route::get('/VueImpasseSurX', [Controllers\VueImpasseSurXController::class, 'getAll'])->name('VueImpasseSurX');
+Route::get('/VueInscritsModule', [Controllers\VueInscritsModuleController::class, 'getAll'])->name('VueInscritsModule');
+Route::get('/VueInscritsUE', [Controllers\VueInscritsUEController::class, 'getAll'])->name('VueInscritsUE');
+Route::get('/VueInscritsUnite', [Controllers\VueInscritsUniteController::class, 'getAll'])->name('VueInscritsUnite');
+Route::get('/VueCesure', [Controllers\VueCesureController::class, 'getAll'])->name('VueCesure');

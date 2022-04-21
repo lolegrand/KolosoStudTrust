@@ -29,23 +29,42 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <h3>Vue2Cesures</h3>
+                                <h3>VueAjourneesDetailController</h3>
                                 <table class="table table-dark">
                                     <thead>
                                     <tr scope="row">
-                                        <th>anne1</th>
-                                        <th>anne2</th>
+                                        <th>annee</th>
+                                        <th>capacite</th>
+                                        <th>codeUE</th>
+                                        <th>dateNaiss</th>
+                                        <th>etat</th>
+                                        <th>impaire</th>
+                                        <th>pair</th>
+                                        <th>libelle</th>
+                                        <th>modalite</th>
                                         <th>nom</th>
+                                        <th>num</th>
                                         <th>prenom</th>
+                                        <th>semestre</th>
                                     </tr>
                                     </thead>
+
                                     <tbody>
                                     @foreach($data as $single)
                                         <tr class="pointer">
-                                            <td>{{$single->anne1}}</td>
-                                            <td>{{$single->anne2}}</td>
+                                            <td>{{$single->annee}}</td>
+                                            <td>{{$single->capacite}}</td>
+                                            <td>{{$single->codeUE}}</td>
+                                            <td>{{$single->dateNaiss}}</td>
+                                            <td>{{$single->etat}}</td>
+                                            <td>{{$single->impaire}}</td>
+                                            <td>{{($single->pair)?1:0}}</td>
+                                            <td>{{$single->libelle}}</td>
+                                            <td>{{$single->modalite}}</td>
                                             <td>{{$single->nom}}</td>
+                                            <td>{{$single->num}}</td>
                                             <td>{{$single->prenom}}</td>
+                                            <td>{{$single->semestre}}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
