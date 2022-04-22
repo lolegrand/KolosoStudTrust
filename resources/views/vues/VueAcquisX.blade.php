@@ -29,7 +29,7 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <h3>VueAquisX</h3>
+                                <h3>VueAquisX, x est l'étudiant stud2</h3>
                                 <table class="table table-dark">
                                     <thead>
                                     <tr scope="row">

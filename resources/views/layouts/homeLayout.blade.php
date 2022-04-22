@@ -54,8 +54,7 @@
 
                 <nav class="nav justify-content-center menu h-100 d-none d-md-block">
                     <a class="nav-link d-inline active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link d-inline" href="#">Features</a>
-                    <a class="nav-link d-inline" href="#">Contact</a>
+                    <a class="nav-link d-inline" href="#views">Features</a>
                 </nav>
 
                 <div class="nav nav-masthead justify-content-center">
@@ -66,13 +65,12 @@
                             <rect id="Rectangle_90" data-name="Rectangle 90" width="31" height="5" rx="2.5" transform="translate(1749 60)"/>
                         </g>
                     </svg>
-
                 </div>
             </div>
         </header>
 
         <div class="px-3 text-start mt-auto container mb-5">
-            <h1>Your safety is at the heart <br>of our concern</h1>
+            <h1>Stud'trust</h1>
             <!--    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>-->
         </div>
 
@@ -104,28 +102,11 @@
 
                     </div>
                     <div class="col-12 col-md-2 mb-2">
-                        <h5>Main Menu</h5>
+                        <h5>Participant</h5>
                         <ul class="list-unstyled text-small">
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Home</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Features</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">About</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Test</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-2 mb-2">
-                        <h5>Xxxxxxxx</h5>
-                        <ul class="list-unstyled text-small">
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Xxxxxxxx</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Xxxxxxxx</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-2 mb-2">
-                        <h5>About</h5>
-                        <ul class="list-unstyled text-small">
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                            <li class="mb-1">Mestre Sylvain</li>
+                            <li class="mb-1">Raji Zakaria</li>
+                            <li class="mb-1">Legrand Louis</li>
                         </ul>
                     </div>
                 </div>

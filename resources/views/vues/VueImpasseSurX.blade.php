@@ -29,7 +29,7 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <h3>VueImpasseSurX</h3>
+                                <h3>VueImpasseSurX, x est 'Windows'</h3>
                                 <table class="table table-dark">
                                     <thead>
                                     <tr scope="row">
