@@ -10,6 +10,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property int    $anne1
  * @property int    $anne2
  */
+
+////TODO 8 :
+/// le  modèle permet de communiquer avec la base de données.
+/// chaque modèle doit être configurer pour garantir la bonne liaison&communication entre lui et une table de la BDD
+/// pour cela il faut d'abord  préciser le nom de la table  $table = 'Vue2Cesures';
+/// puis préciser le $primaryKey ainsi que $fillable c-a-d les attributs qui seront utiliser lors du CRUD.... etc.
+
 class Vue2Cesures extends Model
 {
     /**

@@ -1,5 +1,21 @@
+{{--TODO 9 :
+    ---> la vue est l'interface graphique qui sera affiché à l'utilisateur.
+    ---> cette interface sera alimenté à travers les données qu'on récupérer de Model(Vue2CesuresController.php)
+    ---> les vues utilisent un moteur de templating qui s'appelle Blade
+--}}
+
+
+
+{{--TODO 10 :
+    ---> @extends est une fonction de Blade qui permet d'heriter une template d'une autre vue existante EX : views/layouts/app.blade.php
+--}}
 @extends('../layouts.app')
 
+
+{{--TODO 11 :
+    ---> @section permet de faire une liaison entre le fichier courant avec l'autre herite(layouts/app)
+    ---> Ex: le code entre le @section('content') --- et --- @endSection sera inserer dans le fichier parent  layouts.app dans   la ligne @yield('content')
+--}}
 @section('content')
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -40,6 +56,11 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    {{--TODO 13 :
+                                        ---> le $data est un tableau de données qu'on récupérer de Contrôler (Vues2CesureController.php)
+                                        ---> return view('vues.Vue2Cesures',['data'=>$Cesures]);
+                                        ---> puisque $data est un tableau, on doit utiliser une boucle for qui va parcourir la table  et afficher les attributs de chaque ligne.
+                                       --}}
                                     @foreach($data as $single)
                                         <tr class="pointer">
                                             <td>{{$single->anne1}}</td>

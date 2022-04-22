@@ -25,6 +25,9 @@
     <div id="app">
 
         <main class="py-4">
+            {{--TODO 12 :
+            @yield('content') permet de declarer un block qui sera remplacer par le code de preciser entre @section('content') --- et --- @endSection  dans les autre vues qui vont heriter cette vue
+--}}
             @yield('content')
         </main>
     </div>
