@@ -9,6 +9,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -33,6 +40,7 @@
     </div>
 
     @yield('javascript-link')
+    @yield('javascript-code')
 <div class="w-100 text-center">
     <a href="/#views" class="btn btn-primary my-auto">return to homepage</a>
 </div>

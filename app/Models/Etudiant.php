@@ -32,7 +32,7 @@ class Etudiant extends Model
      * @var array
      */
     protected $fillable = [
-        'nom', 'prenom', 'dateNaiss'
+        'num', 'nom', 'prenom', 'dateNaiss'
     ];
 
     /**
@@ -67,7 +67,7 @@ class Etudiant extends Model
      *
      * @var boolean
      */
-    public $timestamps = true;
+    public $timestamps = false;
 
     // Scopes...
 

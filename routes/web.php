@@ -34,6 +34,13 @@ Route::get('/', function () {
 Route::get('/Vue2Cesures', [Controllers\Vue2CesuresController::class, 'getAll'])->name('Vue2Cesures');
 
 
+Route::get('/Etudiants',[Controllers\EtudiantController::class,'getAll'])->name('Etudiants');
+Route::post('/storeEtudiant',[Controllers\EtudiantController::class,'store'])->name('Etudiant.store');
+Route::get('/deleteEtudiant/{id}',[Controllers\EtudiantController::class,'delete'])->name('Etudiant.delete');
+
+Route::get('/modifyEtudiant/{id}',[Controllers\EtudiantController::class,'modify'])->name('Etudiant.modify');
+
+
 
 
 Route::get('/VueAcquisDetailX', [Controllers\VueAcquisDetailXController::class, 'getAll'])->name('VueAcquisDetailX');
@@ -57,4 +64,8 @@ Route::get('/VueUEImpairePaire', [Controllers\VueUEImpairePaireController::class
 Route::get('/VueModuleImpaire', [Controllers\VueModuleImpaireController::class, 'getAll'])->name('VueUEModuleImpaire');
 Route::get('/VueModuleNbUE', [Controllers\VueModuleNbUEController::class, 'getAll'])->name('VueUEModuleNbUE');
 Route::get('/VueModulePaire', [Controllers\VueModulePaireController::class, 'getAll'])->name('VueUEModulePaire');
+
+
+
+
 

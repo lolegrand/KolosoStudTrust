@@ -67,7 +67,15 @@ section{
     margin-top: 0 !important;
 }
 
-
+.card.active{
+    background: var(--std-primary);
+}
+.card.active *{
+    color: var(--std-white);
+}
+.card.active svg{
+    fill: var(--std-white);
+}
 
 .card .title{
     font-size: var(--std-card-title-size);
