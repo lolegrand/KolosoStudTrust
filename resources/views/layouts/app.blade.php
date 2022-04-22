@@ -30,6 +30,8 @@
     </div>
 
     @yield('javascript-link')
-
+<div class="w-100 text-center">
+    <a href="/#views" class="btn btn-primary my-auto">return to homepage</a>
+</div>
 </body>
 </html>

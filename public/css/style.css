@@ -1,0 +1,117 @@
+/* Declaring all font specs....  */
+:root {
+    --std-font-family : Roboto;
+    
+    
+  --std-primary: #BF3B6C;
+  --std-secondary: #BF3B6C;
+  --std-third: #D9B88F;
+  --std-fourth: #8C6645;
+  --std-fifth: #D92929;
+  --std-black: #000000;
+  --std-white: #FFFFFF;
+    
+    --std-h1-size : 50px;
+    --std-menu-li-size : 14px;
+    --std-h5-size : 20px;
+    
+    
+    --std-menu-li-weight: Bold;
+    --std-headding-weight: Bold;
+    
+    --std-margin-y: 80px;
+    --std-padding-y: 80px;
+    
+}
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: var(--std-font-family);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: var(--std-headding-weight);
+}
+
+h1{
+    font-size: var(--std-h1-size);
+}
+
+
+.menu a {
+    font-size : var(--std-menu-li-size) !important;
+    font-weight: var(--std-menu-li-weight); 
+    color: var(--std-black);
+}
+.menu a:hover {
+    color: var(--std-primary);
+}
+.menu a.active {
+    color: var(--std-primary);
+}
+
+section{
+    margin-top: var(--std-margin-y);
+    margin-bottom: var(--std-margin-y);
+}
+
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+
+
+.card .title{
+    font-size: var(--std-card-title-size);
+    font-weight: var(--std-card-title-weight);
+}
+
+
+.card .title{
+    font-size: var(--std-card-title-size);
+    font-weight: var(--std-card-title-weight);
+    
+}
+
+
+.height-100{
+    height: 100vh; 
+}
+
+
+.nav-link .card{
+    color: var(--std-black); 
+}
+
+
+.nav-link .card {
+    transform: 1s;
+}
+
+.nav-link .card:hover {
+    transform: scale(1.08)
+}
+
+
+footer{
+    background: var(--std-black);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer *{
+    color: var(--std-white);
+}
+
+
+
+
+
